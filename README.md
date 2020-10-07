@@ -1,7 +1,10 @@
 adapt-contrib-blockslider
 =========================
 
-A contributed block slider extension for the Adapt Learning framework
+A contributed block slider extension for the Adapt Learning framework.
+
+![blockslider](https://user-images.githubusercontent.com/53190802/95395149-2655dd00-08bb-11eb-9dd7-70265a902efa.gif)
+
 
 Installation
 ------------

@@ -55,8 +55,8 @@ define([
         // Add controls to the article
         var data = this.model.toJSON();
         var template = Handlebars.templates["blockslider"];
-        this.$('.article-inner').addClass('blockslider-article');
-        $(template(data)).insertBefore(this.$('.blockslider-container'));
+        this.$('.article__inner').addClass('blockslider-article');
+        $(template(data)).insertAfter(this.$('.block__inner'));
         this.$('.blockslider-tab').first().addClass('active');
         return this;
       },
@@ -115,7 +115,7 @@ define([
       },
 
       calculateDimensions: function() {
-        var slideWidth = this.$('.article-body').width();
+        var slideWidth = this.$('.article__body').width();
         var slideCount = this.model.get('_blockCount');
         var stage = this.model.get('_stage');
         var margin = -(stage * slideWidth);
